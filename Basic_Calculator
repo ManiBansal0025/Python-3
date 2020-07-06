@@ -1,0 +1,56 @@
+#program 3
+import math
+class Calculator:
+    def __init__(self):
+        self.a = 0
+        self.b = 0
+        self.res = 0
+    def addition(self):
+        self.res = self.a + self.b
+        return self.res
+    def subtraction(self):
+        self.res = self.a - self.b
+        return self.res
+    def mutiplication(self):
+        self.res = self.a * self.b
+        return self.res
+    def division(self):
+        self.res = self.a // self.b
+        return self.res
+    def power(self):
+        self.res = math.pow(self.a ,self.b)
+        return self.res
+    def logarithm(self):
+        self.res = math.log(self.a,self.b)
+        return self.res
+obj = Calculator()
+print("1.For Addition "
+      "2.For Subtraction "
+      "3.For Multiplication "
+      "4.For Division "
+      "5.For Power "
+      "6.For Logarithm ")
+choice = input("Enter your choice")
+obj.a = int(input("Enter first no."))
+obj.b = int(input("Enter second no."))
+obj.res = 0
+if(choice == "1" ):
+    obj.addition()
+    print(obj.res)
+elif (choice == "2"):
+    obj.subtraction()
+    print(obj.res)
+elif (choice == "3"):
+    obj.mutiplication()
+    print(obj.res)
+elif (choice == "4"):
+    obj.division()
+    print(obj.res)
+elif (choice == "5"):
+    obj.power()
+    print(obj.res)
+elif (choice == "6"):
+    obj.logarithm()
+    print(obj.res)
+else:
+    print("Wrong choice")
