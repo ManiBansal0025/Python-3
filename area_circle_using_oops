@@ -1,0 +1,19 @@
+''' Write a Python class named Circle constructed by a radius and two methods
+which will compute the area and the perimeter of a circle.
+'''
+class Circle:
+  def __init__ (self):
+    self.radius = 0
+    self.area = 0
+    self.perimeter = 0
+  def a1(self):
+    self.area = 3.14 * (self.radius*self.radius) 
+  def p1(self):
+    self.perimeter = 2 * 3.14 * self.radius
+
+ob1 = Circle()
+ob1.radius = float(input("Enter the radius value: "))
+ob1.a1()
+ob1.p1()
+print(f"Area is: {ob1.area}")
+print(f"Area is: {ob1.perimeter}")
